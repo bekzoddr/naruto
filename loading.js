@@ -1,3 +1,5 @@
-window.addEventListener("DOMContentLoaded", () => {
-  document.querySelector(".loading").classList.add("loading-hidden");
-});
+const loading = document.getElementById("loader");
+
+setTimeout(() => {
+  loading.classList.add("loading-none");
+}, 5000);

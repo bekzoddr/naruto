@@ -5,36 +5,34 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
-
-.loading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-
-}
-
-.hidden {
-    display: none;
-}
-
-
-.loading {
+#loader {
+    width: 100%;
+    height: 100%;
     position: fixed;
-    inset: 0;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background: white;
     opacity: 0.8;
-    font-size: 50px;
-    color: white;
-    transition: 0.5s;
+    transition: 2s;
+    z-index: 10000;
 }
 
-.loading-hidden {
+#loader.loading-none {
+    z-index: -10000;
     opacity: 0;
-    z-index: -1;
+}
+
+.loader {
+    width: 150px;
+    height: 150px;
+    border-left: 5px solid #38ff8e;
+    border-radius: 50%;
+    animation: right5231 0.9s linear infinite;
 }
 
 
